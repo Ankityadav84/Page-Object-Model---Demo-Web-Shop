@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="base.Listeners"/>
+    <listener class-name="base.RetryListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="testcases.PE">
+        <methods>
+          <include name="commerceSections"/>
+          <include name="reviewSection"/>
+          <include name="launchBrowser"/>
+          <include name="closingBrowser"/>
+          <include name="starterKitsPage"/>
+          <include name="legalSection"/>
+          <include name="creditCardSection"/>
+        </methods>
+      </class> <!-- testcases.PE -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

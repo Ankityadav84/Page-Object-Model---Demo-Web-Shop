@@ -45,7 +45,7 @@ public class BaseTest {
 	public void beforeTest() {
 		setupDriver();
 		driver.manage().window().maximize();
-		driver.get(Constants.url);
+//		driver.get(Constants.url);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/DemoWebshop Report");
